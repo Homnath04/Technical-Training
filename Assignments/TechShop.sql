@@ -304,8 +304,9 @@ DECLARE @EndDate DATE = '2024-01-01';
 SELECT SUM(TOTAL_AMOUNT) AS TOTAL_REVENUE  
 FROM ORDERS  
 WHERE ORDER_DATE BETWEEN @StartDate AND @EndDate; */
---TASK 4 :
 
+
+--TASK 4 :
 --1.Write an SQL query to find out which customers have not placed any orders. 
 /* SELECT C.CUST_ID,C.F_NAME + ' ' + L_NAME AS CUSTOMER_NAME ,C.EMAIL,C.PHONE,C.ADDRESS
 FROM CUSTOMER C
