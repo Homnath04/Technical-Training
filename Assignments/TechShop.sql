@@ -117,9 +117,9 @@ ALTER COLUMN PRICE DECIMAL(10,2); */
 
 --5. Write an SQL query to delete a specific order and its associated order details from the "Orders" and "OrderDetails" tables.\
 --Allow users to input the order ID as a parameter.DECLARE @NewOrderID INT = (SELECT ISNULL(MAX(ORDER_ID), 0) + 1 FROM ORDERS);
-/* DECLARE @CustomerID INT = 3; -- Change as needed
-DECLARE @OrderDate DATE = GETDATE(); -- Current date
-DECLARE @TotalAmount DECIMAL(10,2) = 0; -- Can be updated later
+/* DECLARE @CustomerID INT = 3; 
+DECLARE @OrderDate DATE = GETDATE(); 
+DECLARE @TotalAmount DECIMAL(10,2) = 0; 
 
 INSERT INTO ORDERS (ORDER_ID, CUST_ID, ORDER_DATE, TOTAL_AMOUNT)
 VALUES (@NewOrderID, @CustomerID, @OrderDate, @TotalAmount); */
