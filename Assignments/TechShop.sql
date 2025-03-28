@@ -102,6 +102,11 @@ INSERT INTO Inventory VALUES (1, 111, 50, '2024-03-01 10:15:00'),
 FROM CUSTOMER; */
 
 --2.Write an SQL query to list all orders with their order dates and corresponding customer names. 
+/* SELECT O.ORDER_ID,O.ORDER_DATE, C.F_NAME + ' ' + C.L_NAME AS CUSTOMER_NAME
+FROM ORDERS O
+JOIN CUSTOMER C ON O.CUST_ID = C.CUST_ID
+ORDER BY O.ORDER_DATE DESC; */
+
 
 --3. Write an SQL query to insert a new customer record into the "Customers" table. Include customer information such as name, email, and address.
 
