@@ -1,5 +1,0 @@
-num = int(input('Enter the value '))
-hexval = hex(num)
-octval = oct(num)
-print('Hexadecimal Value of num is' , hexval)
-print('Octal value is' , octval)
